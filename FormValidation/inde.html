@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form name="fm" method="get">
+        <table width="500" >
+         <tr>
+            <td colspan="2" align="center"><h3>Form Validation</h3></td>
+          </tr>
+          <tr>
+            <td><label>Enter  Your Name</label></td>
+            <td><input type="text" name="txtname" id="box_1" /></td>
+            <td><label id="lb_1"></label>
+          </tr>
+          <tr>
+             <td><label>Enter  Your Email</label></td>
+            <td><input type="text" name="txtemail" id="box_2"/></td>
+              <td><label id="lb_2"></label></td>
+          </tr>
+          <tr>
+             <td><label>Enter  Your Phone</label></td>
+            <td><input type="text" name="txtnumber" id="box_3"/></td>
+             <td><label id="lb_3"></label></td>
+          </tr>
+          <tr>
+            <td><label>Select Country</label></td>
+            <td>
+                <select name="country">
+                         <option >Select Country</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="India">India</option>
+                        <option value="Srilanka">Srilanka</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="China">China</option>
+                </select>
+            </td>
+             <td><label id="lb_4"></label></td>
+          </tr>
+          <tr>
+            <td><label>Comments</label></td>
+            <td><textarea rows="5" cols="20" name="commt" id="box_4"></textarea></td>
+            <td><label id="lb_5"></label></td>
+          </tr>
+           <tr>
+            <td></td>
+            <td><input type="button" value="Submit" onclick="validate()"/></td>
+          </tr>
+        </table>
+        </form>
+        </center>
+
+        <script>
+            function validate(){
+                var un = fm.txtname.value; //0
+                var em = fm.txtemail.value;
+                var no = fm.txtnumber.value;
+                var con = fm.country.selectedIndex;
+                var comment = fm.commt.value;
+                var reg = /^[a-zA-Z]{12,20}$/
+                if(un.length == 0){
+                    document.getElementById("lb_1").innerHTML = "Please Enter your name";
+                    document.getElementById("box_1").style.borderColor = "Red";
+                    document.getElementById("lb_1").style.color = "Red"
+                }
+                else if(reg.test(un) == false){
+                    document.getElementById("lb_1").innerHTML = "Invalid Username";
+                    document.getElementById("box_1").style.borderColor = "Red";
+                    document.getElementById("lb_1").style.color = "Red"
+
+                }
+                else if(un.length != 0){
+                    document.getElementById("lb_1").innerHTML = "";
+                    document.getElementById("box_1").style.borderColor = "Green";
+                }
+                if(em.length == 0){
+                    document.getElementById("lb_2").innerHTML = "Please Enter your email";
+                    document.getElementById("box_2").style.borderColor = "Red";
+                    document.getElementById("lb_2").style.color = "Red"
+                }
+                else if(em.length != 0){
+                    document.getElementById("lb_2").innerHTML = "";
+                    document.getElementById("box_2").style.borderColor = "Green";
+                }
+                if(no.length == 0){
+                    document.getElementById("lb_3").innerHTML = "Please Enter your number";
+                    document.getElementById("box_3").style.borderColor = "Red";
+                    document.getElementById("lb_3").style.color = "Red"
+                }
+                else if(no.length != 0){
+                    document.getElementById("lb_3").innerHTML = "";
+                    document.getElementById("box_3").style.borderColor = "Green";
+                }
+                if(con == 0){
+                    document.getElementById("lb_4").innerHTML = "Please Enter your email";
+                    document.getElementById("lb_4").style.color = "Red"
+                }
+                else if(con != 0){
+                    document.getElementById("lb_4").innerHTML = "";
+                }
+                if(comment.length == 0){
+                    document.getElementById("lb_5").innerHTML = "Please Enter your Comment";
+                    document.getElementById("box_4").style.borderColor = "Red";
+                    document.getElementById("lb_5").style.color = "Red"
+                }
+                else if(comment.length != 0){
+                    document.getElementById("lb_5").innerHTML = "";
+                    document.getElementById("box_4").style.borderColor = "Green";
+                }
+                if(un.length != 0 && em.length != 0 && no.length != 0 && con != 0 && comment.length != 0){
+                        var win = window.open();
+                        win.document.write("User Name is "+un+ "<br>");
+                        win.document.write("User Email is "+em+ "<br>");
+                        win.document.write("User Phone is "+no+ "<br>");
+                        win.document.write("User Country is "+fm.country.value+ "<br>");
+                        win.document.write("User Comment is "+comment+ "<br>");
+                }
+            }
+        </script>
+
+
+
+</body>
+</html>

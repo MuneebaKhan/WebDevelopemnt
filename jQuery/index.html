@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        #div1{
+            background-color: darkseagreen;
+            color: indigo;
+            padding: 15px;
+        }
+        #div2{
+            background-color: black;
+            color: red;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>First Example</h2>
+
+    <h1 id = "demo">Hello World</h1>
+    <h2 class = "demo2"> Jquery Start</h2>
+    <button type="button" id = "btn">OnClick Event</button>
+
+    <h2>Second Example</h2>
+
+    <button type="button" class="btn_one">Set All Paragraph</button>
+    <button type="button" class="btn_two"> Set First Paragraph</button>
+    <button type="button" class="btn_three"> Set Empty Paragraph</button>
+     
+     <p>This is test Paragraph</p>
+     <p>This is another test paragraph</p>
+     <p class = "empty"></p>
+
+
+     <h2>Third Example</h2>
+     <div id = "div1">
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+             Dolores iusto quia sint omnis fuga aliquam, et molestiae sed 
+             commodi eaque quo perspiciatis maiores ipsum alias ab id natus ipsam
+              quidem.</p>
+     </div>
+     <div id = "div2">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Dolores iusto quia sint omnis fuga aliquam, et molestiae sed 
+            commodi eaque quo perspiciatis maiores ipsum alias ab id natus ipsam
+             quidem.</p>
+    </div> <br>
+    <button type="button" id = "btn_show">SHOW BUTTON</button>
+    <button type="button" id = "btn_hide">HIDE BUTTON</button>
+    <button type="button" id = "btn_toggle">toggle Button</button>
+
+    <script src = "jquery-3.6.0.slim.min.js"></script>
+
+    <!-- <script src = "jquery-3.5.1.slim.min.js"></script> -->
+     
+    <script>
+        //*******First Example*********//
+        // $(document).ready(function(){
+
+        //     $("h1").css("background", "yellow");  //id selection
+        //     $(".demo2").css("color","red");
+        // })
+
+        //*******Second Example*********//
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("h1").css("background", "yellow");  //id selection
+                $(".demo2").css("color","red");
+            })
+        })
+        //*******Third Example*********//
+        $(document).ready(function(){
+            $(".btn_one").click(function(){
+                $('p').text("This is demo text");
+            })
+            $(".btn_two").click(function(){
+                $('p:first').text("This is another demo");
+            })
+            $(".btn_three").click(function(){
+                $(".empty").text("This is one more demo text");
+            })
+        })
+        //*******Fourth Example*********//
+        $(document).ready(function(){
+            $("#btn_hide").click(function(){
+                $("#div1").hide();
+                $("#div2").hide();
+              
+            })
+        })
+        $(document).ready(function(){
+            $("#btn_show").click(function(){
+                $("#div1").show();
+                $("#div2").show();
+            })
+        })
+        $(document).ready(function(){
+            $("#btn_toggle").click(function(){
+                $("#div1").toggle();
+                $("#div2").toggle();
+            })
+        })
+    </script>
+</body>
+</html>

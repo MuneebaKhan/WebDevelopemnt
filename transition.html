@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main{
+            width:350px;
+            height:250px;
+            float: left;
+            margin-left: 20px;
+
+        }
+        #tran{
+            border: 1px solid black;
+            background-color: red;
+            transition-property: background ;
+            transition-duration:2s;
+            transition-delay: 1s;
+            transition-timing-function: ease;
+        }
+        #tran:hover{
+            background-color: yellowgreen;
+        }
+        #tran2{
+            border:1px solid red;
+            background-color: blanchedalmond;
+            transition-property: background;
+            transition-duration:2s;
+            transition-delay: 1s;
+            transition-timing-function: linear;
+
+        }
+        #tran2:hover{
+            background-color: darkkhaki;
+        }
+        #para{
+            padding: 10px;
+            text-align: justify;
+            font-size: 20px;
+            color: black;
+            transition-property: font;
+            transition-duration:2s;
+            transition-delay: 1s;
+            transition-timing-function: linear;
+        }
+        #para:hover{
+            font-size: large;
+            font-weight: bold;
+            color: rgb(115, 165, 28);
+            background-color: floralwhite;
+        }
+
+        #tran3{
+            border:1px solid blueviolet;
+            background-color: coral;
+            transition-property: background;
+            transition-property: width;
+            transition-duration:2s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        #tran3:hover{
+            width:500px;
+            background-color: darksalmon;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Transition Effect</h1>
+    <div id = "tran" class="main">
+    </div>
+
+    <div id = "tran2" class="main">
+        <p id = "para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem libero iusto eveniet sapiente obcaecati harum enim, id officiis reiciendis repellendus! Non magni vel cupiditate repellat numquam eveniet voluptates rem labore.</p>
+    </div>
+
+    <div id = "tran3" class="main"></div>
+    
+</body>
+</html>

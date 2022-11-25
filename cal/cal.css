@@ -1,0 +1,17 @@
+#main{
+        border:1px solid black;
+        margin: auto;
+        width: 300px;
+}
+#txt{
+        width:290px;
+}
+#clear{
+        width:300px;
+}
+.btn{
+        width:70px;
+}
+.btn2{
+        width:145px;
+}

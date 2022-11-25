@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #animation {
+            width: 300px;
+            height: 200px;
+            position: relative;
+
+            animation-name: example;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+
+        @keyframes  example{
+            0%{
+                background-image: url("cartoon1.jpg");
+                background-size: 200px 200px;
+                background-repeat: no-repeat;
+                left:0%;
+                top:0%
+            }
+            25%{
+                background-image: url("cartoon2.jpg");
+                background-size: 200px 200px;
+                background-repeat: no-repeat;
+                left:200px;
+                top:0px;
+
+            }
+            50%{
+                background-image:url("cartoon3.jpg");
+                background-size: 200px 200px;
+                background-repeat: no-repeat;
+                left:200px;
+                top:200px;
+
+            }
+            75%{
+                background-image: url("cartoon4.jpg");
+                background-size: 200px 200px;
+                background-repeat: no-repeat;
+                left:0px;
+                top:200px;
+            }
+            100%{
+                background-image: url("cartoon4.png");
+                background-size: 200px 200px;
+                background-repeat: no-repeat;
+                left:0px;
+                top:0px;
+            }
+            
+        }
+
+
+
+
+
+        /* @keyframes example {
+
+
+
+
+
+            0% {
+                background-image: url(cartoon1.jpg);
+                background-size: 200px 200px;
+                background-repeat: no-repeat;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-image: url(cartoon1.jpg);
+                background-size: 200px 200px;
+                background-repeat: no-repeat;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-image: url(cartoon2.jpg);
+                background-repeat: no-repeat;
+                background-size: 200px 200px;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-image: url(cartoon3.jpg);
+                background-size: 200px 200px;
+                background-repeat: no-repeat;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-image: url(cartoon4.jpg);
+                background-size: 200px 200px;
+                background-repeat: no-repeat;
+                left: 0px;
+                top: 0px;
+            }
+        }
+ */
+
+
+
+
+
+
+
+
+
+
+
+        /* #animation-color {
+            width: 300px;
+            height: 200px;
+            margin-top: 10px;
+            float: right;
+            position: relative;
+            animation-name: example2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example2 {
+            0% {
+                background-color: chartreuse;
+                top: 0px;
+                right: 0px;
+            }
+
+            25% {
+                background-color: cornflowerblue;
+                top: 0px;
+                right: 200px;
+            }
+
+            50% {
+                background-color: darkgreen;
+                top: 200px;
+                right: 200px;
+            }
+
+            75% {
+                background-color: deeppink;
+                top: 200px;
+                right: 0px;
+            }
+
+            100% {
+                background-color: gold;
+                top: 0px;
+                right: 0px;
+            }
+
+        }
+
+        #para {
+            animation: animate-zoomm 0.4s;
+            margin-top: 250px;
+            height:300px;
+            
+        }
+
+        @keyframes animate-zoomm {
+            from {
+                font-size: 0px;
+                color: darkred;
+                background-color: mediumseagreen;
+                margin-left: 0px;
+            }
+
+            to {
+                font-size: 16px;
+                color: mediumblue;
+                background-color: orange;
+                margin-left: 50px;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+
+    <h1>Animation</h1>
+
+
+    <div id="animation">
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div id="animation-color">
+       
+
+    </div> -->
+
+
+    <!-- <p id="para">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia ex velit voluptatem.
+    </p> -->
+
+    
+</body>
+
+</html>

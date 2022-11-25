@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "app.js"></script>
+</head>
+<body>
+    
+    <h1>Start JavaScript</h1>
+
+    <!-- <form action="" onsubmit="first()">
+        Name <input type="text">
+        <input type= "submit">
+    </form>
+    <br>
+    <button type="button" onclick="alert('Hello World')">Click Me</button>
+
+    <button type="button" oncontextmenu="right()">contextmenu event</button>
+
+    <button type="button" onmouseover="over()" onmouseout="out()">Mouse Over and Out</button> -->
+
+    <!-- <br>
+    <button type="button" onclick="new_window()">Click to move to the next</button>
+    <h1 id = "head">Some Random Text</h1>
+    <button type="button" onclick="change()">Cahnge Text</button>
+    <br>
+    <h1>Images Changes</h1>
+    <img src= "img2.jpg" alt="off image" id = "img" style="width: 100px; height: 100px;"> <br>
+    <button type="button" onclick="on()">On Bulb</button>
+    <button type="button" onclick="off()">Off Bulb</button> -->
+
+<!-- ***************CHANGE IMAGES AND IMAGES NAME******************** -->
+
+<!-- <img src="img3.jpg" alt="ford" id = "myImg" width = "300" height = "300">   <br>
+Model <input type="text" id = "mytext" value = "Ford Car" readonly = "readonly"> <br> <br>
+<input type= "button" value = "Change Image" onclick="change_image()">
+<script>
+    function change_image(){
+    var imgText = document.getElementById("myImg").alt;  //ford
+    if(imgText == "ford"){
+        document.getElementById("myImg").src = "img4.jpg";
+        document.getElementById("myImg").alt = "ferrari";
+        document.getElementById("mytext").value = "Ferrari Car";
+    }
+    else{
+
+        document.getElementById("myImg").src = "img3.jpg";
+        document.getElementById("myImg").alt = "ford";
+        document.getElementById("mytext").value = "Ford Car";
+    }
+}
+</script> -->
+
+
+
+
+<form action="">
+
+    Name: <input type="text" id = "txt">  <br>
+    
+    <input type= "radio" name = "gender" value = "male">Male
+    <input type= "radio" name = "gender" value = "Female">Female
+    <br> 
+    <button type="button" onclick="info()">Click</button>
+    <h3 id = "fetch">Data Get here</h3>
+    <script>
+       function info(){
+        var nm = document.getElementById("txt").value;  //john
+        var gender = document.getElementsByName("gender")[0].checked; //male
+
+        if(gender){
+            gndr = "male";
+        }
+        else{
+            gndr = "female";
+        }
+        var mm = document.getElementById("fetch").innerHTML = " Your name is: " +nm+ " and gender is "   + gndr;
+        console.log(mm);
+    }
+
+
+    </script>
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+</body>
+</html>

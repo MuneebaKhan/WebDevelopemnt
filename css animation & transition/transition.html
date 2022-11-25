@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        h1{
+            text-align: center;
+        }
+        .main-trans{
+            float:left;
+            width:350px;
+            height:250px
+        }
+
+        #tran {
+            
+            background: red;
+
+            transition-property: background;
+            transition-duration:2s;
+            transition-delay:1s;
+            transition-timing-function:ease;
+            margin: 10px;
+        }
+
+
+
+        #tran:hover {
+            background-color: yellowgreen;
+        }
+
+
+        #tran2{
+            background-color: teal;
+            margin: 10px;
+            transition-property: background;
+            transition-duration:2s;
+            transition-delay:1s;
+            transition-timing-function:linear;       
+        }
+        #tran2:hover{
+            background-color: black;
+        }
+        #para{
+            padding: 10px;
+            text-align: justify;
+            font-size: 20px;
+            color: white;
+            transition-property:font;
+            transition-duration:2s;
+            transition-delay:1s;
+            transition-timing-function:linear;
+        }
+        #para:hover{
+            font-size: large;
+            font-weight: bold;
+            color: red;
+            background-color: aquamarine;
+
+        }
+        #tran3{
+            background-color: tomato;
+            margin: 10px;
+
+            
+            transition-property: background;
+            transition-property: width;
+            transition-duration:2s;
+            transition-delay:1s;
+            transition-timing-function:ease-in-out;
+        }
+        #tran3:hover{
+            width: 600px;
+            background-color: blueviolet;
+        } 
+        
+    </style>
+</head>
+
+<body>
+
+
+
+    <h1>CSS Transition</h1>
+
+
+    <div id="tran" class = "main-trans">
+    </div>
+
+
+
+    <div id="tran2" class = "main-trans">
+
+        <p id = "para">Lorem ipsum dolor, sit amet consectetur adipisicing 
+            elit. Labore deserunt ea velit est! Mollitia nam ratione, 
+            expedita velit beatae reiciendis quibusdam placeat consequuntur 
+            recusandae quisquam optio ab commodi esse rerum!</p>
+    </div>
+
+
+
+    <div id="tran3" class = "main-trans">
+    </div>
+</body>
+
+</html>

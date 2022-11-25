@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Searching Pattern</h1>
+    <p>Watching Birds</p>
+    <button type="button" onclick="func()">Search String</button>
+    <p id = "para">After Searching the index number print this para</p>
+    <!-- MATCH method -->
+
+    <h1>Pattern Matching</h1>
+    <p id = para2>The best thing in life are free</p>
+    <button type="button" onclick="Matcch()">Test Pattern</button>
+    <p id = demo></p>
+    <script>
+    
+
+
+    function Matcch(){
+        var text = document.getElementById("para2").innerHTML;
+        var patt = /liFe/i;
+        var n = patt.test(text);
+        var check = document.getElementById("demo").innerHTML = "After testing the String is :"+n;
+        alert(check);
+        console.log(check);
+    }
+
+
+
+
+
+
+    function func(){
+       var str =  "Watching Birds";
+       var reg = /BiRdS/i;
+       var nm = str.search(reg);
+       var sear = document.getElementById("para").innerHTML = "Searching number of Bird is: "+nm;
+       alert(sear);
+       console.log(sear);
+        }
+
+       var str2 = "Watching Birds";
+       var reg2 = /BIrDs/i;
+       var rep = str2.replace(reg2,"Cow");
+       alert("Replace Bird String is: "+rep);
+       console.log("Replace Bird String is: "+rep);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Name<input type="text" id = u_name> <br> <br>
+        number <input type="text" id = "num">
+        <button type="submit" onclick="func()">Submit</button>
+    </form>
+
+    <script>
+
+        function func(){
+            var nm = document.getElementById("u_name").value;
+            var exp = /^[a-zA-Z]{12,20}$/
+            var mn = document.getElementById("num").value;
+            var num = /^[0][3][0-9]{2}[-][0-9]{7}$/
+            if(exp.test(nm) && num.test(mn)){
+                alert("valid");
+
+            }
+            else{
+                alert("Invalid");
+            }
+           
+        }
+
+    </script>
+</body>
+</html>

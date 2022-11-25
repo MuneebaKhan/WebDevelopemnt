@@ -1,0 +1,159 @@
+/* *{
+    background-color: darkkhaki;
+   
+} */
+/* .demo{
+    background-color: blueviolet;
+}
+.demo2{
+    color: brown;
+}
+#head{
+    background-color: coral;
+}
+#head2{
+    color:darkblue;
+}
+
+
+.demo3:hover{
+    background-color: darksalmon;
+    color: firebrick;
+
+} */
+
+/* a{
+    text-decoration: none;
+}
+a:link{
+    color:red
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color: hotpink;
+}
+a:active{
+    color: indigo;
+}
+
+#myDiv{
+    border: 1px solid black;
+    background-color: darksalmon;
+}
+#myDiv h1{
+    background-color:darksalmon ;
+}
+#myDiv p{
+    text-align: center;
+    color: red;
+    background-color: darkseagreen;
+}
+
+
+#mydiv{
+    border:1px solid red;
+    background-color: darkseagreen;
+}
+
+#mydiv #myhead1{
+    text-decoration: overline;
+    text-decoration-color: firebrick;
+}
+#mydiv #myhead2{
+    text-decoration: underline;
+    text-decoration-color: green;
+}
+#mydiv #myhead3{
+    text-decoration: line-through;
+    text-decoration-color: indigo;
+}
+
+#mydiv .upperClass{
+    text-transform: uppercase;
+    text-indent: 50px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px green;
+}
+
+#mydiv .lowerClass{
+    text-transform: lowercase;
+    word-spacing: 5px;
+}
+
+#my .captalized{
+    text-transform: capitalize;
+} */
+
+
+
+#demo{
+    border:1px solid black;
+    background-color: aquamarine;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 30px ;
+}
+#demo #para{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight:bolder;
+    font-variant: small-caps;
+    color: black;
+    text-shadow: 2px 2px 5px red;
+    text-indent: 10px;
+}
+#demo span{
+    color:blueviolet;
+}
+
+
+.demo2{
+    /* border:1px inset red; */
+    /* border-style: dashed; */
+    border-width: 2px;
+    /* border-color: red; */
+    border-top-style: double;
+    border-bottom-style: solid;
+    border-left-style: dashed;
+    border-right-style: ridge;
+    /* border-top-color:red;
+    border-bottom-color:blueviolet;
+    border-right-color:chartreuse;
+    border-left-color:darkblue; */
+    border-color:darkblue lightcoral darkgreen red;
+    border-radius: 15px;
+
+    text-align: right;
+    /* padding-left: 30px; */
+    padding-top: 40px;
+    padding-right:50px;
+    /* margin-top: 10px; */
+}
+
+#img{
+    width:100px;
+    height:100px;
+    float: right;
+}
+#demo4{
+    border: 1px solid red;
+    margin-top: 60px;
+}
+#demo4 ul li{
+    display: inline-block;
+    border:1px solid black;
+    padding: 10px 10px 10px 10px;
+    background-color: darkkhaki;
+    
+}
+#demo4 ul li a{
+    text-decoration: none;
+    color:black;
+}
+#demo4 ul li:hover{
+    background-color:darkviolet;
+
+}

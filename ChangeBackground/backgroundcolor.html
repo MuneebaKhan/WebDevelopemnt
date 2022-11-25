@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Background color change</title>
+<style>
+.d1
+{
+ width:100%;
+ height:70px;
+}
+h1{
+	text-align:center;
+	font-family:Verdana, Geneva, sans-serif;
+	padding:10px;
+}
+</style>
+
+</head>
+<body>
+	
+<div class="d1" id="bg">
+
+<h1 id="myhead">BackGround Color Change After Some Time</h1>
+</div>
+<!-- <button onclick="window.close()"> Close</button>
+<button onclick="window.open('https://www.google.com/')"> Open</button> -->
+<script>
+function color1() //define
+{
+	document.getElementById("bg").style.backgroundColor = "#11485E";
+	document.getElementById("myhead").style.color = "#fff"
+	setTimeout("color2()",500);	
+}
+
+function color2() //define
+{
+	document.getElementById("bg").style.backgroundColor = "#5B0D66";
+	document.getElementById("myhead").style.color = "#f00"
+	setTimeout("color3()",500);	
+}
+
+function color3() //define
+{
+	document.getElementById("bg").style.backgroundColor = "#662B0D";
+	document.getElementById("myhead").style.color = "#0f0"
+	setTimeout("color4()",500);	
+}
+function color4() //define
+{
+	document.getElementById("bg").style.backgroundColor = "#0D6620";
+	document.getElementById("myhead").style.color = "#00f"
+	setTimeout("color1()",500);	
+}
+
+color1();//call
+
+</script>
+
+</body>
+</html>

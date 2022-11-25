@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="fname">FirstName</label>
+        <input type="text" id = "fname" placeholder="Enter Your name" required autofocus> <br> <br>
+
+         <label for="lname">LastName</label>
+         <input type="text" id = "lname" placeholder="Enter Your last Name" required > <br> <br>
+
+        <label for="emailId">Email</label>
+        <input type= "email" id = "emailId" name = "email" required> <br> <br>
+
+        <label for="ran">Range</label>
+        <input type= "range" name="rating" min = "1" max = "10" id = "ran"> <br> <br>
+
+        <label for="stdate">Date</label>
+        <input type="date" id = "stdate" name = "startdate"> <br> <br>
+
+        <label for="col">Color</label>
+        <input type="color" id = "col"> <br> <br>
+
+        <label for="Country_Selection">Country Name</label>
+        <select name="Country" id="Country_Selection" value = "Country">Country
+            <option value="Pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+        </select> <br> <br>
+
+        <label for="list">Select the payement mode</label>
+
+        <input type="text"  list = "paymentlist" id = "list">
+
+        <datalist id = "paymentlist">
+
+            <option value="Cash-on-delivery"></option>
+            <option value="Net Banking"></option>
+            <option value="Credit Card"></option>
+            <option value="Debit Card"></option>
+
+        </datalist> <br> <br>
+     
+
+
+
+
+        <input type= "submit" value="submit">
+    </form>    
+</body>
+</html>
